@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_text_height">80dp</dimen>
+    <dimen name="button_dock_height">75dp</dimen>
+    <dimen name="button_dock_width">75dp</dimen>
+</resources>

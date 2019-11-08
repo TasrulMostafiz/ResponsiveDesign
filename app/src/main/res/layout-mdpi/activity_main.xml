@@ -10,8 +10,8 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/gps">
 
     </ImageView>
@@ -23,18 +23,5 @@
         android:layout_margin="5sp"
         android:background="@drawable/adhoc"
         style="@android:style/Widget.Button"></Button>
-
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:src="@mipmap/ic_launcher_round">
-    </ImageView>
-
-    <EditText
-        android:layout_marginTop="10dp"
-        android:layout_width="350dp"
-        android:layout_height="30dp"
-        android:background="@android:color/holo_red_dark">
-    </EditText>
 
 </LinearLayout>
