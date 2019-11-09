@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+
+    tools:context=".DockPanelActivity">
+
+
+    <!--  Upper Start-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_gravity="clip_vertical"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/profile_horizontalbar"
+        android:orientation="horizontal">
+
+        <!--  Text Start-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="25sp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tvVmId"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:textColor="@android:color/white"
+
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/tvArea"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:textColor="@android:color/white"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+        <!--  Text End-->
+
+        <!--  Image Start-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10sp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/user_demo"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="2dp" />
+
+        </LinearLayout>
+        <!--  Image End-->
+
+
+    </LinearLayout>
+
+    <!--  Upper End -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/entry_dialogue_box"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+<!--        android:background="@drawable/linear_layout_border"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Today's Visit"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Target"
+                android:textColor="@color/logo_blue"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/tvTodayTarget"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/logo_blue"
+                android:textSize="20sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Done "
+                android:textColor="@color/logo_blue"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/tvTodayAchievement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/logo_blue"
+                android:textSize="20sp"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:background="@drawable/linear_layout_border"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="10dp">-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:text="Month's Goal"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                />-->
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Target"-->
+<!--                android:textColor="@color/logo_blue"-->
+<!--                android:textSize="20sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvMonthlyTarget"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textColor="@color/logo_blue"-->
+<!--                android:textSize="20sp"></TextView>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Achievement"-->
+<!--                android:textColor="@color/logo_blue"-->
+<!--                android:textSize="20sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvMonthlyAchievement"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textColor="@color/logo_blue"-->
+<!--                android:textSize="20sp"></TextView>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+    <!--  Middle  Start-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAttendance"
+                    android:layout_width="@dimen/button_dock_width"
+                    android:layout_height="@dimen/button_dock_height"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_attendance"></Button>
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Attendence"
+                    android:textColor="@color/logo_blue">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnActivities"
+                    android:layout_width="@dimen/button_dock_width"
+                    android:layout_height="@dimen/button_dock_height"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_posm"></Button>
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Activity"
+                    android:textColor="@color/logo_blue"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnOutlet"
+                    android:layout_width="@dimen/button_dock_width"
+                    android:layout_height="@dimen/button_dock_height"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_asset"></Button>
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Outlet"
+                    android:textColor="@color/logo_blue"></TextView>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnAddhoc"-->
+<!--                    android:layout_width="@dimen/button_dock_width"-->
+<!--                    android:layout_height="@dimen/button_dock_height"-->
+<!--                    android:layout_margin="5sp"-->
+<!--                    android:background="@drawable/button_adhoc"></Button>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="75dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:text="Ad-hoc"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textColor="@color/logo_blue"></TextView>-->
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--  Middle End -->
+
+
+    <!--  Lower Start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+<!--        <Button-->
+<!--            android:id="@+id/btnEnd"-->
+<!--            android:layout_width="150sp"-->
+<!--            android:layout_height="40sp"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:background="@drawable/main_menu_bg"-->
+<!--            android:text="Exit"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large">-->
+
+<!--        </Button>-->
+
+    </LinearLayout>
+
+
+    <!--  Lower End -->
+
+</LinearLayout>
